@@ -87,8 +87,8 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    padding: 15px 0;
-    background: crimson;
+    padding: 25px 0;
+    background: rgb(23, 177, 177);
 }
 .navbar .max-width{
     display: flex;
@@ -101,7 +101,7 @@ section .title::after{
     font-weight: 600;
 }
 .navbar .logo a span{
-    color: crimson;
+    color: rgb(23, 177, 177);
     transition: all 0.3s ease;
 }
 
@@ -114,18 +114,22 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: black;
+    color: white;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
 
+.navbar .sticky .menu li a {
+    color: white;
+}
+
 .navbar .menu li a:hover{
-    color: crimson;
+    color:rgb(23, 177, 177);;
 }
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: blue;
 }
 
 /* menu btn styling */
@@ -167,7 +171,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/background-white_auto_x2.jpg") no-repeat center;
+    background: url("images/Design\ sem\ nome\ \(1\)_auto_x2\ \(1\).jpg") no-repeat center;
     height: 100vh;
     color: black;
     min-height: 500px;
@@ -195,7 +199,7 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: crimson;
+    color: rgb(23, 177, 177);
     font-weight: 500;
 }
 .home .home-content a{
@@ -217,6 +221,7 @@ section .title::after{
 
 /* about section styling */
 .about .title::after{
+    color: rgb(23, 177, 177);
     content: "Quem eu sou";
 }
 .about .about-content .left{
@@ -237,7 +242,7 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: crimson;
+    color: rgb(23, 177, 177);
 }
 .about .about-content .right p{
     text-align: justify;
@@ -272,9 +277,10 @@ section .title::after{
 .teams .title::after{
     background: #111;
     content: "O que sei fazer";
+    color: rgb(23, 177, 177);
 }
 .services .serv-content .card{
-    width: calc(33% - 20px);
+    width: calc(50% - 20px);
     background: #222;
     text-align: center;
     border-radius: 6px;
@@ -309,6 +315,7 @@ section .title::after{
 
 .skills .title::after{
     content: "O que eu sei";
+    color: rgb(23, 177, 177);
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -382,6 +389,7 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
+    color: rgb(23, 177, 177);
     content: "Meus projetos";
 }
 .teams .carousel .card{
@@ -445,6 +453,7 @@ section .title::after{
 
 /* contact section styling */
 .contact .title::after{
+    color: rgb(23, 177, 177);
     content: "Fale comigo!";
 }
 .contact .contact-content .column{
