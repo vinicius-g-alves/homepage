@@ -290,7 +290,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: crimson;
+    background: rgb(23, 177, 177);
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -300,7 +300,7 @@ section .title::after{
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color: crimson;
+    color: rgb(23, 177, 177);
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
@@ -460,7 +460,7 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid crimson!important;
+    border: 2px solid rgb(23, 177, 177)!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -469,7 +469,7 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: crimson!important;
+    background:rgb(23, 177, 177)!important;
 }
 
 /* contact section styling */
@@ -591,7 +591,7 @@ footer{
     text-align: center;
 }
 footer span a{
-    color: crimson;
+    color: rgb(23, 177, 177);
     text-decoration: none;
 }
 footer span a:hover{
