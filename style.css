@@ -35,7 +35,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .portfolio, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -215,7 +215,8 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: crimson;
+    color: white;
+    border: 2px solid white;
     background: none;
 }
 
@@ -265,16 +266,16 @@ section .title::after{
 }
 
 /* services section styling */
-.services, .teams{
+.services, .portfolio{
     color:#fff;
     background: #111;
 }
 .services .title::before,
-.teams .title::before{
+.portfolio .title::before{
     background: #fff;
 }
 .services .title::after,
-.teams .title::after{
+.portfolio .title::after{
     background: #111;
     content: "O que sei fazer";
     color: rgb(23, 177, 177);
@@ -372,63 +373,83 @@ section .title::after{
     background: crimson;
 }
 .skills-content .right .html::before{
-    width: 90%;
-}
-.skills-content .right .css::before{
-    width: 60%;
-}
-.skills-content .right .js::before{
     width: 80%;
 }
-.skills-content .right .php::before{
-    width: 50%;
-}
-.skills-content .right .mysql::before{
+.skills-content .right .css::before{
     width: 70%;
 }
+.skills-content .right .js::before{
+    width: 60%;
+}
+.skills-content .right .java::before{
+    width: 40%;
+}
+.skills-content .right .python::before{
+    width: 30%;
+}
+.skills-content .right .mysql::before{
+    width: 50%;
+}
+.skills-content .right .angular::before{
+    width: 70%;
+}
+.skills-content .right .bootstrap::before{
+    width: 60%;
+}
 
-/* teams section styling */
-.teams .title::after{
+.frame-title {
+    text-align: center;
+    font: bold 20px 'Ubuntu';
+    padding: 15px;
+}
+
+/* portfolio section styling */
+
+.portfolio .title::after{
     color: rgb(23, 177, 177);
     content: "Meus projetos";
 }
-.teams .carousel .card{
+.portfolio .carousel .card{
     background: #222;
     border-radius: 6px;
-    padding: 25px 35px;
+    padding: 35px 45px;
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
+.portfolio .carousel .card:hover{
     background: crimson;
 }
-.teams .carousel .card .box{
+.portfolio .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    color: white;
 }
-.teams .carousel .card:hover .box{
+.portfolio .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.portfolio .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
-    margin: 10px 0 7px 0;
+    margin: 20px 0 7px 0;
 }
-.teams .carousel .card img{
-    height: 150px;
-    width: 150px;
+.portfolio .carousel .card img{
+    height: 30px;
+    width: 30px;
     object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.portfolio .carousel .card:hover img{
     border-color: #fff;
 }
+
+.portfolio .all-port {
+    color: white;
+}
+
 .owl-dots{
     text-align: center;
     margin-top: 20px;
@@ -528,6 +549,21 @@ section .title::after{
   display: flex;
   align-items: center;
 }
+
+.icons-contato {
+    padding: 50px;
+    text-align: center;
+}
+
+.icon-contact {
+    width: 100px;
+    padding: 20px;
+}
+
+.icon-contact:hover {
+    transform: scale(1.09);
+}
+
 .right form .button-area button{
   color: #fff;
   display: block;
